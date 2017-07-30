@@ -1,0 +1,48 @@
+{
+  "title": "custom rules(launch_apps)",
+  "rules": [
+    {
+      "description": "Launch apps by right shift+letters.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/Utilities/Google Chrome.app'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Applications/vivaldi.app'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
